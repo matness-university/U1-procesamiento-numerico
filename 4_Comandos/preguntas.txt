@@ -1,0 +1,18 @@
+a) >> P1 = a * x^2 + b * x + c
+siendo a,b,c constantes definidas, es necesario el operador '.' al elevar una matriz a una potencia
+P1 = a * x.^2 + b * x + c
+
+b) >> F(A,B,C) = 3 + 9^2 + pi
+las variables A,B,C no están definidas y tampoco inciden en el resultado de la función, es una constante, en todo caso podemos escribir esta función como
+F = 3 + 9^2 + pi
+
+c) >> a=5; b=21; x=[4 5 6]; f1 = a*x+b*x^2
+es necesario el operador '.' al elevar una matriz a una potencia
+a=5; b=21; x=[4 5 6]; f1 = a*x+b*x.^2
+
+d) >> m=ones(2); n=magic(2); x=[7 8 9]; g1=m^2*x+x^*n
+^* no es una correcta implementación de estos operadores. Por otro lado, las matriz 'm' tiene dimensiones 2x2, incompatibles para una multiplicación matricial con el vector x de 3 elementos
+
+e) ¿para qué sirve el operador ‘ . ’ y el operador ‘ ; ’?
+el operador '.' permite una operación escalar en una matriz
+el operador ';' evita mostrar el resultado del comando por pantalla

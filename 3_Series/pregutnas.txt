@@ -1,0 +1,7 @@
+Explicar cuál es el problema al intentar generar las siguientes series:
+>> [10 : -2 : 25]
+La cota inferior debería ser mayor a la superior, en este caso [25:-2:10]
+>> [-5 : 11 : 9]
+No hay inconvenientes
+>> [42 : 2.5 : 23]
+Es necesario agregar un paso negativo para poder obtener una serie decreciente

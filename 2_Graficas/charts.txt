@@ -1,0 +1,20 @@
+>> x = linspace(0,pi,100);
+>> y = sin(x);
+>> p = plot(x,y);
+>> p.Color = 'g';
+>> p.LineWidth = 2;
+>> p.Marker = 'x';
+>> hold on
+>> w = cos(x);
+>> q = plot(x,w);
+>> q.Color = 'b';
+>> q.LineWidth = 2;
+>> q.Marker = 'diamond';
+
+>> x = 0:10/70:10;
+>> y = exp(((x-3).^3)/0.5);
+>> p = plot(x,y);
+>> p.LineStyle = '--';
+>> p.Color = 'c';
+>> p.LineWidth = 2;
+>> p.Marker = 'diamond';
